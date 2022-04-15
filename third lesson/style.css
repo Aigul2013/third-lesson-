@@ -1,0 +1,129 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+}
+/* для обращения к классу нужно поставить точку и название класса */
+.first {
+    width: 300px;
+    height: 300px;
+    /* фоновый цвет */
+    background-color: aquamarine;
+    /* внешний отступ */
+    /* margin */
+    /* margin-top: 100px; */
+    /* внешний отступ сверху */
+    /* margin-left: 200px; */
+    /* внешний отступ слева */
+    /* margin-right: 300px; */
+    /* /* внешний отступ справа */
+    margin: 100px 200px 100px 200px;
+    /* отступ сверху снизу слева справа */
+    margin: 200px auto;
+    /* отступ сверху снизу по бокам, auto - разделитель постваит фигуру посередине в зависимости от родительского элемента */
+/* margin: 300px; */
+/* общий отступ со всех отступ */
+
+
+/* внутренний отступ со всех сторон */
+/* padding:  100px; */
+padding: 40px 100px;
+/* сверху и снизу и по бокам */
+
+
+/* рамки */
+/* border: 2px solid black; */
+/* размер стиль цвет */
+/* border: 5px dotted black; */
+/* border: 5px dashed black; */
+/* border: 5px double black; */
+
+
+/* округление */
+/* border-radius: 100px; */
+border-top-left-radius: 100px;
+border-bottom-right-radius: 100px;
+
+/* тени */
+box-shadow: 5px 5px 10px black;
+
+}
+
+h1 {
+    /* выравнивание текста по центру */
+    /* text-align: center; */
+
+    /* выр-е текста по правому краю */
+    text-align: right;
+    font-size: 20px;
+
+    /* жирность */
+    font-weight: 300;
+
+    /* семейство */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: red;
+    margin-top: 100px;
+    
+/* исправление текста на заглавную букву */
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+}
+
+/* hover эффект меняет стиль при наведении */
+h1:hover{
+    text-align: right;
+    font-size: 30px;
+
+    /* жирность */
+    font-weight: 700;
+
+    /* семейство */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: black;
+    margin-top: 100px;
+    /* плавность дается в секундах или милисекундах */
+    transition: 5s;
+transform: rotate(30deg);
+}
+/* тема - абсолютное позиционирование когда без контейнера */
+.cube{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    /* жирность */
+    box-shadow: 2px 3px 10px grey;
+}
+
+#id1{
+background-color: red;
+position: absolute;
+top: 10px;
+z-index: 3;
+}
+#id2{
+    background-color: yellowgreen;
+    position: absolute;
+    /* когда есть абсолютная позиция для элемента, перестают работать margin и padding */
+    /* отступ сверху */
+    top: 50px;
+    left: 50px;
+    z-index: 4;
+}
+#id3{
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    z-index: 5;
+
+}
+.section_first{
+    /*position: relative родителем для абсолютных элементов */
+    position: relative
+}
